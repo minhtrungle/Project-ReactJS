@@ -36,16 +36,14 @@ const Home = () => {
   console.log(product);
   return (
     <Helmet title="Trang chủ">
-        {/* hero slider */}
         <HeroSlider
             data={heroSliderData}
             control={true}
             auto={false}
             timeOut={5000}
         />
-        {/* end hero slider */}
 
-        {/* policy section */}
+        {/* chính sách */}
         <Section>
             <SectionBody>
                 <Grid
@@ -66,9 +64,7 @@ const Home = () => {
                 </Grid>
             </SectionBody>
         </Section>
-        {/* end policy section */}
-
-        {/* best selling section */}
+        {/* khuyến mãi */}
         <Section>
             <SectionTitle>
                 top sản phẩm bán chạy trong tuần
@@ -95,9 +91,8 @@ const Home = () => {
                 </Grid>
             </SectionBody>
         </Section>
-        {/* end best selling section */}
 
-        {/* new arrival section */}
+        {/* sản phẩn mới */}
         <Section>
             <SectionTitle>
                 sản phẩm mới
@@ -124,7 +119,6 @@ const Home = () => {
                 </Grid>
             </SectionBody>
         </Section>
-        {/* end new arrival section */}
         
         {/* banner */}
         <Section>
@@ -134,9 +128,8 @@ const Home = () => {
                 </Link>
             </SectionBody>
         </Section>
-        {/* end banner */}
 
-        {/* popular product section */}
+        {/* sản phẩm phổ biến */}
         <Section>
             <SectionTitle>
                 phổ biến
@@ -163,7 +156,6 @@ const Home = () => {
                 </Grid>
             </SectionBody>
         </Section>
-        {/* end popular product section */}
     </Helmet>
 )
 }
