@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactLoading from "react-loading";
 import { Link, useNavigate } from "react-router-dom";
-import FromLogin from "../../features/login/FromLogin";
+import FormLogin from "../../features/FormLogin";
 import serviceCallApi from "../../services/serviceApi";
 import { useForm } from "react-hook-form";
 
@@ -67,7 +67,7 @@ const RegisterPage = () => {
                         required
                       />
                       <div className="text-danger">
-                        {errors.name && <span>Name field is required</span>}
+                        {errors.name && <span>Bạn phải nhập tên</span>}
                       </div>
                     </div>
                     <div className="mb-3">
@@ -82,7 +82,7 @@ const RegisterPage = () => {
                         required
                       />
                       <div className="text-danger">
-                        {errors.name && <span>Email field is required</span>}
+                        {errors.name && <span>Bạn phải nhập email</span>}
                       </div>
                     </div>
                     <div className="mb-3">
