@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import ReactLoading from "react-loading";
+import ReactLoading from 'react-loading';
 import { Link, useNavigate } from "react-router-dom";
-import FormLogin from "../../features/login/FormLogin";
+import FormLogin from "../../features/FormLogin";
 import serviceCallApi from "../../services/serviceApi";
+
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);
@@ -44,7 +45,7 @@ const LoginPage = () => {
                     />
                   </div>
                 ) : (
-                  <FromLogin onSubmit={onSubmit} />
+                  <FormLogin onSubmit={onSubmit} />
                 )}
               </div>
               <div className="card-footer py-3 border-0">

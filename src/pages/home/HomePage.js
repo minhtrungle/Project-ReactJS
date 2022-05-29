@@ -1,15 +1,22 @@
-import React, { useEffect, useState } from "react";
-import Header from "../../components/Header";
-import { Link } from "react-router-dom";
-import heroSliderData from '../assets/fake-data/hero-slider'
-import policy from '../assets/fake-data/policy'
-import productData from '../assets/fake-data/products'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 
-import banner from '../assets/images/banner.png'
+import Helmet from '../../components/Helmet';
+import HeroSlider from '../../components/HeroSlider'
+import Section, { SectionTitle, SectionBody } from '../../components/Section'
+import PolicyCard from '../../components/PolicyCard'
+import Grid from '../../components/Grid'
+import ProductCard from '../../components/ProductCard';
+
+import heroSliderData from '../../assets/fake-data/hero-slider'
+import policy from '../../assets/fake-data/policy'
+import productData from '../../assets/fake-data/products'
+
+import banner from '../../assets/images/banner.png'
 const axios = require("axios").default;
 
-const Home = () => {
-  const [product, setProduct] = useState([]);
+const HomePage = () => {
+  /*const [product, setProduct] = useState([]);
 
   const onTop = (e) => {
     document.body.scrollTop = 0;
@@ -26,14 +33,14 @@ const Home = () => {
       });
       setProduct(result.data.data.data);
     } catch (errors) {
-      console.log("loi");
+      console.log("Erro");
     }
   };
   useEffect(() => {
     getProduct();
   }, []);
 
-  console.log(product);
+  console.log(product);*/
   return (
     <Helmet title="Trang chủ">
         {/* hero slider */}
@@ -169,4 +176,3 @@ const Home = () => {
 }
 
 export default HomePage;
-

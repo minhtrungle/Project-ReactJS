@@ -131,10 +131,13 @@ const RegisterPage = () => {
                 <div className="text-center">
                   Bạn đã có tài khoản{" "}
                   <Link to="/login" className="text-dark">
-                    Login
+                  Login
                   </Link>
                 </div>
               </div>
+            </div>
+            <div className="text-center mt-5 text-muted">
+              ReactJS Project
             </div>
           </div>
         </div>
