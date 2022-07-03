@@ -31,7 +31,7 @@ const NavBar = () => {
         <div className='container'>
           {/* Brand */}
           <Link className='navbar-brand waves-effect' to='/'>
-            <strong className='blue-text'>MEETEE SHOP</strong>
+            <strong className='blue-text'>MEE-TEE SHOP</strong>
           </Link>
           {/* Collapse */}
           <button
